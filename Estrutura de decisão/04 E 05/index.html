@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4 e 5</title>
+</head>
+<body>
+
+  <button onclick="vogal()">IsVogal?</button>
+
+  <button onclick="aprovado()">Aluno aprovado?</button>
+  
+
+  <script>
+    function vogal() {
+      const letra = prompt('Informe a letra')
+      const letraUp = letra.toUpperCase()
+
+      switch(letraUp) {
+        case 'A':
+          alert(`a letra informada: '${letraUp}' é vogal`)
+          break;
+        case 'E':
+          alert(`a letra informada: '${letraUp}' é vogal`)
+          break;  
+        case 'I':
+          alert(`a letra informada: '${letraUp}' é vogal`)
+          break;
+        case 'O':
+          alert(`a letra informada: '${letraUp}' é vogal`)
+          break;
+        case 'U':
+          alert(`a letra informada: '${letraUp}' é vogal`)
+          break;
+        default: 
+          alert(alert(`a letra informada: '${letraUp}' é consoante`))
+      }
+    }
+
+    function  aprovado() {
+      const nota1 = prompt('Informe a primeira nota')
+      const nota2 = prompt('Informe a nota 2')
+      const soma = parseInt(nota1) + parseInt(nota2)
+      const media = soma / 2
+
+      if (media >= 7) {
+        alert(`Média alcançada: ${media} aluno Aprovado`)
+      } else if (media < 7) {
+        alert(`Média inalcançada: ${media} aluno reprovado`)
+      } else if (media == 10) {
+        alert(`Média alcaçada ${media} aluno APROVADO COM DISTINÇÃO`)
+      }
+
+
+    }
+  </script>
+</body>
+</html>
+
+<!-- Faça um Programa que verifique se uma letra digitada é vogal ou consoante.
+5. Faça um programa para a leitura de duas notas parciais de um aluno. O programa deve calcular a média alcançada
+por aluno e apresentar: A mensagem "Aprovado", se a média alcançada for maior ou igual a sete;
+A mensagem "Reprovado", se a média for menor do que sete;
+A mensagem "Aprovado com Distinção", se a média for igual a dez-->
