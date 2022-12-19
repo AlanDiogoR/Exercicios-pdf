@@ -31,11 +31,12 @@
         salario = parseInt(prompt('Informe um salario valido'))
       }
 
-      while((sexo !== 'f') || (sexo !== 'm')) {
+      
+      while(( toUpperCase(sexo[0]) !== 'F') && (toUpperCase(sexo[0]) !== 'M')) {        
         sexo =  prompt('Informe um sexo valido(F para feminino ou M para masculino)')        
       }
 
-      while((estadoCivil !== 'S') || (estadoCivil !== 'C') || (estadoCivil !== 'V') || (estadoCivil !== 'D')) {
+      while((toUpperCase(estadoCivil[0]) !== 'S') && (toUpperCase(estadoCivil[0]) !== 'C') && (toUpperCase(estadoCivil[0]) !== 'V') && (toUpperCase(estadoCivil[0]) !== 'D')) {
         estadoCivil = prompt('Informe o estado civil')        
       }
     }
