@@ -9,7 +9,7 @@ function es2() {
 function es3() {
   const num1 = prompt('Informe o numero 1')
   const num2 = prompt('Informe o numero 2')
-  alert(`${num1} + ${num2} é igual ${num1 + num2}`)
+  alert(`${num1} + ${num2} é igual ${parseInt(num1) + parseInt(num2)}`)
   
 }
 function es4() {
@@ -23,7 +23,7 @@ function es4() {
   
 }
 function es5() {
-  let metros = prompt('Informe os centímetros')
+  let metros = prompt('Informe os metros')
   let centímetros = parseInt(metros) / 100
   alert(`a conversão de metros para centímetros é: ${centímetros}`)
 }
@@ -35,7 +35,7 @@ function es6() {
 function es7() {
   let quadrado = prompt('Informe um lado do quadrado')
   let areaQuadrado = parseInt(quadrado) * parseInt(quadrado)
-  alert(`a area do quadrado é: ${areaQuadrado} e o dobro dela é ${areaQuadrado * areaQuadrado}`)
+  alert(`a area do quadrado é: ${areaQuadrado} e o dobro dela é ${parseInt(areaQuadrado) * 2}`)
   
 }
 function es8() {
@@ -53,8 +53,8 @@ function es9() {
 
 function es10() {
   let gcelsius = prompt('Informe quantos graus celsius está')
-  let gFarenheit = ((parseInt(gcelsius) * 9) / 5) + 32
-  alert(`A conversão de ${gcelsius} graus celcius para graus farenheit deu: ${celsius}`)
+  let gFarenheit = (parseInt(gcelsius) * 9) / 5 + 32
+  alert(`A conversão de ${gcelsius} graus celcius para graus farenheit deu: ${gFarenheit}`)
 }
 
 
