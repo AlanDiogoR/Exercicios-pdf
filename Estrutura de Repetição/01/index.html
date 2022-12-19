@@ -11,7 +11,7 @@
   
   <script>
     function nota() {
-      const nota = parseInt(prompt('Informe a nota'))
+      let nota = parseInt(prompt('Informe a nota'))
 
       while((nota < 0) || (nota > 10)) {
         alert(`o valor: ${nota} não é valido`)

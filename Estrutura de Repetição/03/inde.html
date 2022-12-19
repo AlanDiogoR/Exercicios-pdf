@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validando user</title>
+</head>
+<body>
+
+  <button onclick="validateUser()">Validar user</button>
+
+
+  <script>
+    function validateUser() {
+      let nome = prompt('Informe o nome')
+      let idade = parseInt(prompt('Informe a idade'))
+      let salario = parseInt(prompt('Informe o sálario'))
+      let sexo =  prompt('Informe o sexo')
+      let estadoCivil = prompt('Informe o estado civil')
+
+      while(nome.length < 3) {
+        nome = prompt('Informe um nome valido')
+      }
+
+      while((idade < 0) || (idade > 150) ) {
+        idade = parseInt(prompt('Informe uma idade valida'))
+      }
+
+      while(salario < 0) {
+        salario = parseInt(prompt('Informe um salario valido'))
+      }
+
+      while((sexo !== 'f') || (sexo !== 'm')) {
+        sexo =  prompt('Informe um sexo valido(F para feminino ou M para masculino)')        
+      }
+
+      while((estadoCivil !== 'S') || (estadoCivil !== 'C') || (estadoCivil !== 'V') || (estadoCivil !== 'D')) {
+        estadoCivil = prompt('Informe o estado civil')        
+      }
+    }
+  </script>
+  
+</body>
+</html>
+
+<!-- 
+  Faça um programa que leia e valide as seguintes informações:
+a. Nome: maior que 3 caracteres;
+b. Idade: entre 0 e 150;
+c. Salário: maior que zero;
+d. Sexo: 'f' ou 'm';
+e. Estado Civil: 's', 'c', 'v', 'd';
+ -->
