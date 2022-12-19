@@ -13,13 +13,12 @@
     function nota() {
       const nota = parseInt(prompt('Informe a nota'))
 
-      if ((nota > 0) && (nota <= 10)) {
-        alert(`valor: ${nota} é valido`)
-      } else {
-        for (nota; (nota < 0 || nota > 10); ) {
-          nota = parseInt(prompt('Informe uma nota'))
-        }
+      while((nota < 0) || (nota > 10)) {
+        alert(`o valor: ${nota} não é valido`)
+        nota = parseInt(prompt('Informe a nota'))
       }
+
+      
     }
   </script>
 </body>
