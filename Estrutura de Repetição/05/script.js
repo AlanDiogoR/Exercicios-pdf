@@ -8,9 +8,13 @@ function Calc() {
   let populateATaxa = prompt('Informe a taxa de crescimento da população A')
   let populateB = prompt('Informe a pouplação maior B')
   let populateBTaxa = prompt('Informe a taxa de crescimento da população B')
+  populateA = parseInt(populateA)
+  populateATaxa = parseInt(populateATaxa)
+  populateB = parseInt(populateB)
+  populateBTaxa = parseInt(populateBTaxa)
 
   for (let i = 0; populateA < populateB; i++) {
-    populateA = (populateA * ) + populateA
+    populateA = (populateA * (populateATaxa / 100)) + populateA
     populateB = (populateB * 0.015) + populateB
   }
 
