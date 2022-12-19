@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estrutura de repetião</title>
+</head>
+<body>
+  <button onclick="nota()">Nota de 0 a 10</button>
+  
+  <script>
+    function nota() {
+      const nota = parseInt(prompt('Informe a nota'))
+
+      if ((nota > 0) && (nota <= 10)) {
+        alert(`valor: ${nota} é valido`)
+      } else {
+        for (nota; (nota < 0 || nota > 10); ) {
+          nota = parseInt(prompt('Informe uma nota'))
+        }
+      }
+    }
+  </script>
+</body>
+</html>
+
+<!-- Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e
+continue pedindo até que o usuário informe um valor válido.-->
