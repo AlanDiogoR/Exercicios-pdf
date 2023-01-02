@@ -5,29 +5,29 @@ function twoNumbersInt() {
 }
 
 function heightPeople() {
-  alert('oi');
+  alert('heigthPeople');
 }
 
 function SexoPeople() {
-  alert('oi');
+  alert('SexoPeople');
 }
 
 function fishermanTalk() {
-  alert('oi');
+  alert('fishermanTalk');
 }
 
 function earningPerHour() {
-  alert('oi');
+  alert('earningPerHour');
 }
 
 function paintStoreTree() {
-  alert('oi');
+  alert('paintStoreTree');
 }
 
 function paintStoreSix() {
-  alert('oi');
+  alert('paintStoreSix');
 }
 
 function calculateSpeed() {
-  alert('oi');
+  alert('calculateSpeed');
 }
